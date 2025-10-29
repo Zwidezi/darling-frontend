@@ -1,7 +1,5 @@
 {
   "env": {
     "REACT_APP_API_URL": "https://darling-backend-h01v.onrender.com"
-  },
-  "buildCommand": "npm run build",
-  "outputDir": "build"
+  }
 }
