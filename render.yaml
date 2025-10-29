@@ -1,8 +1,10 @@
 services:
   - type: web
     name: darling-frontend
-    runtime: docker
-    dockerfilePath: ./Dockerfile
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
     envVars:
       - key: REACT_APP_API_URL
         value: https://darling-backend-h01v.onrender.com
