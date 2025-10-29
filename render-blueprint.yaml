@@ -1,0 +1,20 @@
+schemaVersion: 1
+name: Darling Dating App - Frontend
+description: React frontend for darling dating app
+syntaxError: False
+pricingPlan: Free
+variables:
+  - key: REACT_APP_API_URL
+    description: Backend API URL
+    default: https://darling-backend-h01v.onrender.com
+services:
+  - type: web
+    name: darling-frontend
+    runtime: docker
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: serve -s build -l 3000
+    environmentWhen: Optional
+    env:
+      REACT_APP_API_URL: ${REACT_APP_API_URL}
