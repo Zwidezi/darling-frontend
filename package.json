@@ -1,0 +1,21 @@
+{
+  "name": "darling-dating-app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.6.0",
+    "react-router-dom": "^6.0.0",
+    "lucide-react": "^0.294.0"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "start": "serve -s build -l 3000"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1",
+    "serve": "^1.14.2"
+  }
+}
