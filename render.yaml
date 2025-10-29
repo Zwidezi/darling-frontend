@@ -1,12 +1,1 @@
-schemaVersion: 1
-services:
-  - type: web
-    name: darling-frontend
-    runtime: node
-    nodeManifestPath: package.json
-    region: oregon
-    plan: free
-    buildCommand: npm install --global serve && npm run build
-    startCommand: serve -s build -l 3000
-    environment:
-      REACT_APP_API_URL: https://darling-backend-h01v.onrender.com
+# Deleted - use dummy file
